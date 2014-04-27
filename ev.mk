@@ -1,5 +1,8 @@
 $(call inherit-product, device/samsung/d2lte/full_d2lte.mk)
 
+# Call this first so apn list is actually copied
+$(call inherit-product, vendor/ev/config/apns.mk)
+
 # Inherit some common evervolv stuff.
 $(call inherit-product, vendor/ev/config/common_full_phone.mk)
 
